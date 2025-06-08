@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+!!! Warning
+    DeepGroundwater is still in an ongoing beta. Expect changes before a stable v1 release
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# DeepGroundwater Specification
+The required dataset formats for streamflow input ingestion, and geospatial references, into DDR routing.
 
-## Commands
+<p align="center">
+  <img src="img/deep_groundwater_logo.png" width="40%"/>
+</p>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+# Usage
+To build these docs locally, you can run the following lines of code to serve these docs in your localhost. Changes will update dynamially in the browser
+```
+## optionally setup an venv
+# uv venv
+# source .venv/bin/activate
+uv pip install -r requirements.txt
+mkdocs serve
+```
